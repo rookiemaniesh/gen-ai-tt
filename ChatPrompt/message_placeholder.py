@@ -18,8 +18,8 @@ with open('ChatPrompt\chat_history.txt') as f:
 prompt=chatTemplate.invoke({'chat_history':chat_history,'qwery':'when will my flowers arrive?'})
 # print(prompt)
 result=model.invoke(prompt)
-chat_history.append(AIMessage(content=result.content))
+chat_history.append(f"AI: {result.content}")
 print(result.content)
 with open('ChatPrompt/chat_history.txt', 'a') as f:
-    f.write(AIMessage(content=result.content))
+    f.write(f"AI: {result.content}")
 print(chat_history)

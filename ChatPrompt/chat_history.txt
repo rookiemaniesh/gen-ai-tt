@@ -2,3 +2,6 @@ HumanMessage(content="I want to request a refund for my order #12345.")
 AIMessage(content="Your refund request for order #12345 has been initiated. It will be processed in 3-5 business days.")I can help you with that! To find out when your flowers will arrive, please check the tracking link provided in your order confirmation email. You can also log in to your account on our website and view the status under "My Orders."
 
 If you can't find the information, please let me know and I'll do my best to assist you further!
+AI: To find out when your flowers will arrive, please check the tracking link provided in your order confirmation email. You can also log in to your account on our website and view the status under "My Orders."
+
+If you can't find the information, please let me know and I'll do my best to assist you further!
