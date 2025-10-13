@@ -5,6 +5,7 @@ load_dotenv()
 
 model=ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
+#You’re getting ValueError: no signature found for builtin type <class 'dict'> because with_structured_output() doesn’t support plain TypedDict — it expects a Pydantic model or function with a defined signature. The quick fix is to replace your TypedDict with a Pydantic BaseModel.
 class Review(BaseModel):
     summary:str
     sentiment:str
