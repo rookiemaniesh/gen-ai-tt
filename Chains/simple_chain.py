@@ -17,3 +17,33 @@ parser= StrOutputParser()
 chain= prompt | model | parser
 result=chain.invoke({'topic':'women'})
 print(result)
+
+
+chain.get_graph().print_ascii() #iska output niche
+#  +-------------+      
+#       | PromptInput |
+#       +-------------+
+#              *
+#              *
+#              *
+#     +----------------+
+#     | PromptTemplate |
+#     +----------------+
+#              *
+#              *
+#              *
+# +------------------------+
+# | ChatGoogleGenerativeAI |
+# +------------------------+
+#              *
+#              *
+#              *
+#     +-----------------+
+#     | StrOutputParser |
+#     +-----------------+
+#              *
+#              *
+#              *
+# +-----------------------+
+# | StrOutputParserOutput |
+# +-----------------------+
