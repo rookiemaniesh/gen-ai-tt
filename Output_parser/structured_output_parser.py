@@ -31,3 +31,4 @@ template=PromptTemplate(
 chain= template | model | parser
 result=chain.invoke({'topic':'Generative AI'})
 print(result)
+# isme no data validation mtlb schema me to aayega par data type dura ho skta h
